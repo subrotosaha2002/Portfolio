@@ -1,0 +1,1489 @@
+/* =========================================================
+   SHOWCASE BASE
+========================================================= */
+
+/* =========================================================
+   SHOWCASE BASE
+========================================================= */
+
+.showcase {
+  position: relative;
+
+  width: 100%;
+
+  height: 100vh;
+  min-height: 680px;
+
+  overflow: hidden;
+
+  background: #0a0b0f;
+}
+
+
+.showcase-canvas {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100% !important;
+  height: 100% !important;
+
+  z-index: 1;
+}
+
+
+/* =========================================================
+   OVERLAY
+========================================================= */
+
+.showcase-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 10;
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   TOP LEFT
+========================================================= */
+
+.showcase-hint {
+  position: absolute;
+
+  top: 2.25rem;
+  left: 3vw;
+
+  color: var(--text-dim);
+
+  font-size: 0.72rem;
+
+  letter-spacing: 0.14em;
+
+  text-transform: uppercase;
+
+  opacity: 0.9;
+}
+
+
+/* =========================================================
+   TOP RIGHT
+========================================================= */
+
+.showcase-top-right {
+  position: absolute;
+
+  top: 2.25rem;
+  right: 3vw;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 1.5rem;
+
+  pointer-events: all;
+}
+
+
+/* =========================================================
+   FILTER
+========================================================= */
+
+.showcase-filter {
+  display: flex;
+
+  align-items: center;
+
+  gap: 0.15rem;
+
+  padding: 0.25rem;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.07);
+
+  border-radius: 999px;
+
+  background:
+    rgba(15, 17, 23, 0.55);
+
+  backdrop-filter:
+    blur(10px);
+}
+
+
+.showcase-filter-option {
+  appearance: none;
+
+  border: 0;
+
+  padding:
+    0.45rem
+    0.72rem;
+
+  border-radius: 999px;
+
+  background:
+    transparent;
+
+  color:
+    rgba(255, 255, 255, 0.42);
+
+  font-family:
+    inherit;
+
+  font-size:
+    0.62rem;
+
+  font-weight:
+    500;
+
+  letter-spacing:
+    0.08em;
+
+  text-transform:
+    uppercase;
+
+  cursor:
+    pointer;
+
+  white-space:
+    nowrap;
+
+  transition:
+    color 0.25s ease,
+    background 0.25s ease,
+    box-shadow 0.25s ease,
+    text-shadow 0.25s ease;
+}
+
+
+.showcase-filter-option:hover {
+  color:
+    rgba(255, 255, 255, 0.8);
+
+  background:
+    rgba(255, 255, 255, 0.04);
+}
+
+
+.showcase-filter-option-active {
+  color:
+    #f3f5f7;
+
+  background:
+    rgba(104, 110, 255, 0.1);
+
+  text-shadow:
+    0 0 10px
+    rgba(122, 126, 255, 0.8);
+
+  box-shadow:
+    inset
+    0
+    0
+    0
+    1px
+    rgba(126, 132, 255, 0.22),
+
+    0
+    0
+    18px
+    rgba(105, 110, 255, 0.16);
+}
+
+
+/* =========================================================
+   COUNTER
+========================================================= */
+
+.showcase-counter {
+  color:
+    var(--text-dim);
+
+  font-size:
+    0.75rem;
+
+  letter-spacing:
+    0.1em;
+
+  white-space:
+    nowrap;
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.nav-arrow {
+  position: absolute;
+
+  top: 50%;
+
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  transform:
+    translateY(-50%);
+
+  pointer-events:
+    all;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.1);
+
+  border-radius:
+    50%;
+
+  background:
+    rgba(15, 17, 23, 0.65);
+
+  color:
+    var(--text);
+
+  font-size:
+    1.1rem;
+
+  cursor:
+    pointer;
+
+  backdrop-filter:
+    blur(8px);
+
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+.nav-arrow:hover {
+  border-color:
+    rgba(90, 130, 255, 0.5);
+
+  background:
+    rgba(24, 95, 165, 0.18);
+
+  box-shadow:
+    0
+    0
+    20px
+    rgba(24, 95, 165, 0.16);
+
+  transform:
+    translateY(-50%)
+    scale(1.05);
+}
+
+
+.nav-arrow:active {
+  transform:
+    translateY(-50%)
+    scale(0.94);
+}
+
+
+.nav-arrow.left {
+  left: 3vw;
+}
+
+
+.nav-arrow.right {
+  right: 3vw;
+}
+
+
+/* =========================================================
+   ACTIVE PROJECT INFO
+========================================================= */
+
+.showcase-info {
+  position: absolute;
+
+  bottom: 3.2rem;
+  left: 50%;
+
+  width:
+    min(90vw, 520px);
+
+  transform:
+    translateX(-50%);
+
+  text-align:
+    center;
+
+  pointer-events:
+    all;
+}
+
+
+.showcase-info .tagline {
+  margin-bottom:
+    0.7rem;
+
+  color:
+    var(--text-dim);
+
+  font-size:
+    0.74rem;
+
+  letter-spacing:
+    0.2em;
+
+  text-transform:
+    uppercase;
+}
+
+
+.showcase-info h3 {
+  margin:
+    0;
+
+  font-size:
+    clamp(
+      1.8rem,
+      4vw,
+      2.6rem
+    );
+
+  font-weight:
+    600;
+
+  letter-spacing:
+    -0.02em;
+}
+
+
+/* =========================================================
+   PROJECT WRAPPER
+========================================================= */
+
+.ph-wrap {
+  user-select:
+    none;
+
+  transition:
+    opacity
+    0.5s
+    ease;
+}
+
+
+.ph-wrap-active {
+  opacity:
+    1;
+}
+
+
+.ph-wrap-side {
+  opacity:
+    0.55;
+
+  pointer-events:
+    none;
+}
+
+
+.ph-wrap-hidden {
+  opacity:
+    0;
+
+  pointer-events:
+    none;
+}
+
+
+/* =========================================================
+   CARD DIMENSIONS
+========================================================= */
+
+.project-card-scene {
+  width:
+    340px;
+
+  height:
+    210px;
+
+  perspective:
+    1200px;
+}
+
+
+.project-card {
+  width:
+    100%;
+
+  height:
+    100%;
+
+  transform-style:
+    preserve-3d;
+
+  transition:
+    transform
+    0.45s
+    cubic-bezier(
+      0.22,
+      0.61,
+      0.36,
+      1
+    );
+}
+
+
+.ph-wrap-active:hover
+.project-card {
+  transform:
+    scale(1.04);
+}
+
+
+/* =========================================================
+   FLIP CARD
+========================================================= */
+
+.project-card-inner {
+  position:
+    relative;
+
+  width:
+    100%;
+
+  height:
+    100%;
+
+  transform-style:
+    preserve-3d;
+
+  will-change:
+    transform;
+
+  transition:
+    transform
+    0.7s
+    cubic-bezier(
+      0.22,
+      0.61,
+      0.36,
+      1
+    );
+}
+
+
+.ph-wrap-active:hover
+.project-card-inner {
+  transform:
+    rotateY(180deg);
+}
+
+
+/* =========================================================
+   CARD FACES
+========================================================= */
+
+.project-card-face {
+  position:
+    absolute;
+
+  inset:
+    0;
+
+  width:
+    100%;
+
+  height:
+    100%;
+
+  overflow:
+    hidden;
+
+  border-radius:
+    14px;
+
+  backface-visibility:
+    hidden;
+
+  -webkit-backface-visibility:
+    hidden;
+
+  transform-style:
+    preserve-3d;
+}
+
+
+.project-card-front {
+  transform:
+    rotateY(0deg);
+}
+
+
+.project-card-back {
+  transform:
+    rotateY(180deg);
+
+  background:
+    linear-gradient(
+      145deg,
+      #171a22,
+      #101217
+    );
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.1);
+
+  box-shadow:
+    0
+    24px
+    60px
+    rgba(0, 0, 0, 0.55);
+}
+
+
+/* =========================================================
+   PROJECT PLACEHOLDER BASE
+========================================================= */
+
+.ph {
+  box-sizing:
+    border-box;
+
+  width:
+    100%;
+
+  height:
+    100%;
+
+  display:
+    flex;
+
+  flex-direction:
+    column;
+
+  gap:
+    12px;
+
+  padding:
+    18px;
+
+  overflow:
+    hidden;
+
+  background:
+    #14161c;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.08);
+
+  border-radius:
+    14px;
+
+  box-shadow:
+    0
+    24px
+    60px
+    rgba(0, 0, 0, 0.55);
+
+  font-family:
+    var(--font);
+}
+
+
+.ph-wrap-active
+.ph {
+  border-color:
+    rgba(
+      226,
+      174,
+      73,
+      0.42
+    );
+
+  box-shadow:
+    0
+    0
+    24px
+    rgba(
+      218,
+      164,
+      54,
+      0.14
+    ),
+
+    0
+    24px
+    60px
+    rgba(
+      0,
+      0,
+      0,
+      0.55
+    );
+}
+
+
+/* =========================================================
+   DASHBOARD
+========================================================= */
+
+.ph-dashboard {
+  display:
+    flex;
+
+  flex-direction:
+    column;
+}
+
+
+.ph-dashboard
+.ph-bar {
+  width:
+    92px;
+
+  height:
+    7px;
+
+  border-radius:
+    999px;
+}
+
+
+.ph-dashboard
+.ph-row {
+  flex:
+    1;
+
+  display:
+    flex;
+
+  gap:
+    12px;
+}
+
+
+.ph-dashboard
+.ph-card {
+  flex:
+    1;
+
+  display:
+    flex;
+
+  flex-direction:
+    column;
+
+  justify-content:
+    center;
+
+  gap:
+    8px;
+
+  padding:
+    12px;
+
+  background:
+    #0f1116;
+
+  border-radius:
+    10px;
+}
+
+
+.ph-dashboard
+.ph-card-lg {
+  position:
+    relative;
+
+  flex:
+    2;
+
+  overflow:
+    hidden;
+}
+
+
+.ph-dashboard
+.ph-glow {
+  position:
+    absolute;
+
+  inset:
+    0;
+}
+
+
+.ph-line {
+  height:
+    7px;
+
+  border-radius:
+    3px;
+}
+
+
+/* =========================================================
+   PIPELINE
+========================================================= */
+
+.ph-pipeline {
+  flex-direction:
+    row;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  gap:
+    18px;
+}
+
+
+.ph-pipeline
+.ph-node {
+  width:
+    92px;
+
+  height:
+    92px;
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  border:
+    1px solid;
+
+  border-radius:
+    10px;
+
+  background:
+    #0f1116;
+
+  color:
+    rgba(255, 255, 255, 0.6);
+
+  font-size:
+    0.62rem;
+
+  letter-spacing:
+    0.08em;
+}
+
+
+.ph-flow {
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  gap:
+    7px;
+}
+
+
+.ph-flow span {
+  width:
+    22px;
+
+  height:
+    2px;
+
+  border-radius:
+    999px;
+}
+
+
+.ph-flow em {
+  font-size:
+    0.75rem;
+
+  font-style:
+    normal;
+
+  font-weight:
+    700;
+}
+
+
+/* =========================================================
+   UI BUILDER
+========================================================= */
+
+.ph-uibuilder {
+  justify-content:
+    space-between;
+}
+
+
+.ph-blocks {
+  display:
+    flex;
+
+  gap:
+    10px;
+}
+
+
+.ph-block {
+  width:
+    58px;
+
+  height:
+    58px;
+
+  border:
+    1px solid;
+
+  border-radius:
+    9px;
+
+  background:
+    #0f1116;
+}
+
+
+.ph-preview {
+  flex:
+    1;
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  border-radius:
+    10px;
+
+  background:
+    #0f1116;
+
+  color:
+    rgba(255, 255, 255, 0.55);
+
+  font-size:
+    0.68rem;
+
+  font-weight:
+    600;
+
+  letter-spacing:
+    0.12em;
+}
+
+
+/* =========================================================
+   ARCLINE
+========================================================= */
+
+.ph-arch {
+  flex-direction:
+    row;
+}
+
+
+.ph-pane {
+  flex:
+    1;
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  border-radius:
+    10px;
+
+  background:
+    #0f1116;
+
+  color:
+    rgba(255, 255, 255, 0.5);
+
+  font-size:
+    0.72rem;
+
+  letter-spacing:
+    0.1em;
+}
+
+
+.ph-pane-img {
+  flex:
+    1.4;
+}
+
+
+/* =========================================================
+   GESTURE MOUSE
+========================================================= */
+
+.ph-gesture {
+  justify-content:
+    space-between;
+}
+
+
+.ph-gesture-screen {
+  position:
+    relative;
+
+  flex:
+    1;
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  overflow:
+    hidden;
+
+  border-radius:
+    10px;
+
+  background:
+    #0f1116;
+}
+
+
+.ph-gesture-hand {
+  font-size:
+    2.5rem;
+}
+
+
+.ph-gesture-pointer {
+  position:
+    absolute;
+
+  right:
+    24%;
+
+  top:
+    24%;
+
+  font-size:
+    1.8rem;
+}
+
+
+.ph-gesture-tracking {
+  position:
+    absolute;
+
+  inset:
+    16px;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.05);
+}
+
+
+.ph-gesture-tracking span {
+  position:
+    absolute;
+
+  width:
+    6px;
+
+  height:
+    6px;
+
+  border-radius:
+    50%;
+
+  background:
+    rgba(255, 255, 255, 0.3);
+}
+
+
+.ph-gesture-tracking span:nth-child(1) {
+  top:
+    10%;
+
+  left:
+    10%;
+}
+
+
+.ph-gesture-tracking span:nth-child(2) {
+  top:
+    10%;
+
+  right:
+    10%;
+}
+
+
+.ph-gesture-tracking span:nth-child(3) {
+  bottom:
+    10%;
+
+  left:
+    10%;
+}
+
+
+.ph-gesture-tracking span:nth-child(4) {
+  right:
+    10%;
+
+  bottom:
+    10%;
+}
+
+
+.ph-gesture-footer {
+  display:
+    flex;
+
+  justify-content:
+    space-between;
+
+  color:
+    rgba(255, 255, 255, 0.38);
+
+  font-size:
+    0.55rem;
+
+  letter-spacing:
+    0.08em;
+}
+
+
+/* =========================================================
+   PROJECT BACK
+========================================================= */
+
+.project-back-content {
+  box-sizing:
+    border-box;
+
+  width:
+    100%;
+
+  height:
+    100%;
+
+  display:
+    flex;
+
+  flex-direction:
+    column;
+
+  justify-content:
+    center;
+
+  padding:
+    1.5rem;
+
+  overflow:
+    hidden;
+}
+
+
+.project-title-row {
+  display:
+    flex;
+
+  flex-direction:
+    column;
+
+  align-items:
+    flex-start;
+
+  gap:
+    0.55rem;
+
+  margin-bottom:
+    0.9rem;
+}
+
+
+.project-back-content h4 {
+  margin:
+    0;
+
+  color:
+    #f5f5f7;
+
+  font-size:
+    1.35rem;
+
+  line-height:
+    1.15;
+
+  font-weight:
+    600;
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.project-status-inline {
+  display:
+    inline-flex;
+
+  align-items:
+    center;
+
+  gap:
+    0.35rem;
+
+  font-size:
+    0.62rem;
+
+  font-weight:
+    600;
+
+  letter-spacing:
+    0.07em;
+
+  text-transform:
+    uppercase;
+
+  white-space:
+    nowrap;
+}
+
+
+.project-status-inline svg {
+  width:
+    0.85rem;
+
+  height:
+    0.85rem;
+
+  flex-shrink:
+    0;
+}
+
+
+.project-status-completed {
+  color:
+    #73e6ba;
+}
+
+
+.project-status-in-development {
+  color:
+    #9e95ff;
+}
+
+
+.project-status-future {
+  color:
+    #72b8f5;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.project-description {
+  margin:
+    0;
+
+  color:
+    rgba(255, 255, 255, 0.68);
+
+  font-size:
+    0.76rem;
+
+  line-height:
+    1.6;
+
+  letter-spacing:
+    0.005em;
+
+  overflow:
+    hidden;
+}
+
+
+/* =========================================================
+   PROJECT BUTTON
+========================================================= */
+
+.project-back-button {
+  display:
+    inline-flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  align-self:
+    flex-start;
+
+  margin-top:
+    1rem;
+
+  padding:
+    0.6rem
+    0.9rem;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.16);
+
+  border-radius:
+    7px;
+
+  background:
+    rgba(255, 255, 255, 0.08);
+
+  color:
+    #ffffff;
+
+  text-decoration:
+    none;
+
+  font-size:
+    0.72rem;
+
+  font-weight:
+    500;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+.project-back-button:hover {
+  background:
+    rgba(255, 255, 255, 0.14);
+
+  border-color:
+    rgba(255, 255, 255, 0.3);
+
+  transform:
+    translateY(-2px);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (
+  max-width: 900px
+) {
+  .showcase-filter-option {
+    padding:
+      0.4rem
+      0.55rem;
+
+    font-size:
+      0.55rem;
+  }
+
+  .showcase-top-right {
+    gap:
+      0.8rem;
+  }
+}
+
+
+@media (
+  max-width: 768px
+) {
+  .showcase {
+    min-height:
+      620px;
+  }
+
+  .project-card-scene {
+    width:
+      300px;
+
+    height:
+      190px;
+  }
+
+  .nav-arrow {
+    width:
+      46px;
+
+    height:
+      46px;
+  }
+
+  .nav-arrow.left {
+    left:
+      1.2rem;
+  }
+
+  .nav-arrow.right {
+    right:
+      1.2rem;
+  }
+
+  .showcase-hint {
+    top:
+      1.5rem;
+
+    left:
+      1.2rem;
+  }
+
+  .showcase-top-right {
+    top:
+      1.5rem;
+
+    right:
+      1.2rem;
+  }
+
+  .showcase-info {
+    bottom:
+      2.2rem;
+  }
+
+  .ph-wrap-active:hover
+  .project-card {
+    transform:
+      scale(1);
+  }
+}
+
+
+@media (
+  max-width: 560px
+) {
+  .showcase-hint {
+    display:
+      none;
+  }
+
+  .showcase-top-right {
+    left:
+      50%;
+
+    right:
+      auto;
+
+    transform:
+      translateX(-50%);
+
+    flex-direction:
+      column;
+
+    gap:
+      0.45rem;
+  }
+
+  .showcase-filter {
+    max-width:
+      calc(
+        100vw -
+        2rem
+      );
+
+    overflow:
+      hidden;
+  }
+
+  .showcase-filter-option {
+    padding:
+      0.4rem
+      0.48rem;
+
+    font-size:
+      0.5rem;
+  }
+
+  .showcase-counter {
+    font-size:
+      0.65rem;
+  }
+
+  .project-card-scene {
+    width:
+      260px;
+
+    height:
+      165px;
+  }
+
+  .ph {
+    padding:
+      12px;
+  }
+
+  .project-back-content {
+    padding:
+      1.1rem;
+  }
+
+  .project-back-content h4 {
+    font-size:
+      1rem;
+  }
+
+  .project-description {
+    font-size:
+      0.66rem;
+
+    line-height:
+      1.45;
+  }
+
+  .project-status-inline {
+    font-size:
+      0.52rem;
+  }
+
+  .project-back-button {
+    margin-top:
+      0.7rem;
+
+    padding:
+      0.5rem
+      0.7rem;
+
+    font-size:
+      0.62rem;
+  }
+}
