@@ -31,7 +31,7 @@ const Contact = () => {
     setNotice("Sending your inquiry...");
 
     const response = await fetch(
-      "http://localhost:5000/api/contact",
+      import.meta.env.PROD ? "/api/contact" : "http://localhost:5000/api/contact",
       {
         method: "POST",
         headers: {
