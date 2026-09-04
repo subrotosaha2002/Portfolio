@@ -340,7 +340,7 @@ canvas {
   align-items: center;
   justify-content: center;
 
-  margin-top: 2rem;
+  margin-top: 6rem;
 
   padding:
     0.95rem
@@ -1650,7 +1650,7 @@ canvas {
 
   .section {
     padding:
-      4.5rem
+      1.1rem
       1.25rem;
   }
 
