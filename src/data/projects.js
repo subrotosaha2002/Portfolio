@@ -58,7 +58,7 @@ export const projects = [
 
   {
     id: 4,
-    title: "Arcline Interiors",
+    title: "Arika Design Studio",
     accent: "#0F6E56",
     highlight: "#854F0B",
 
@@ -75,7 +75,7 @@ export const projects = [
       "A completed digital experience for an interior design brand, featuring a modern portfolio, project showcase, responsive layouts, and client-focused functionality.",
 
     link:
-      "https://arcline-interiors-demo.vercel.app/",
+      "https://arika-design-studio.vercel.app/",
   },
 
   {
